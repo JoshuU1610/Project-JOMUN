@@ -149,25 +149,17 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-}
-
 .container{
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 768px;
+    margin: 5% auto auto;
+    width: 60%;
+    max-height: 17rem;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 38rem;
 }
 
 .container p{
@@ -224,7 +216,8 @@ body{
     padding: 10px 15px;
     font-size: 13px;
     border-radius: 8px;
-    width: 100%;
+    min-width: 60%;
+    max-width: 80%;
     outline: none;
 }
 
@@ -272,6 +265,45 @@ body{
 
 .social-icons{
     margin: 20px 0;
+}
+
+
+/* return */
+
+.return{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #E8B006;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    color: white;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.return:hover{
+    width: 5rem;
+}
+
+.return p {
+    margin-left: 0.7rem;
+    font-size: 0.7rem;
+    display: none;
+    transition: display 0.3s; 
+}
+
+.return:hover p {
+    display: flex;
+}
+
+.return svg{
+    width: 1rem;
+    height: 1rem;
 }
 
 .social-icons a{
