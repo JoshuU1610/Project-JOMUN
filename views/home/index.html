@@ -3,48 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links del diseño -->
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/input.css">
+
+    <!-- link del logo en el navegador -->
+    <link rel="icon" href="/images/Logo.png" type="image/x-icon">
+
+    <!-- link del boxicon -->
+    <link rel="stylesheet"  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- link de remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- titulo -->
     <title>Inicio</title>
 </head>
 <body class="bg-slate-50">
-    <!-- menu de la pagina web -->
-    <nav id="nav-bar">
-        <div id="nav-container">
-            
-            <a href="/index.html"><img src="/images/Logo.png" alt="Logo" id="nav-logo"></a>
+    <header>
+        <a href="#" class="logo">JOMUN</a>
 
-            <div id="links-container">
-                <a class="nav-link" href="/index.html">Home</a>   
-                <a class="nav-link" href="#">Noticias</a>
-                <a class="nav-link" href="#">Quienes Somos</a> 
-            </div>
+        <ul class="navlist">
+            <li><a href="#first">Home</a></li>
+            <li><a href="#second">Quien Somos</a></li>
+            <li><a href="#therd">Noticias</a></li>
+        </ul>
 
-            <a href="/signup" class="nav-button">inicio de sesion</a>
-        </div>         
-    </nav>
+        <a href="/signup" id="Login"><i class="ri-user-line"></i></a>
+    </header>
 
-
-    <!-- presentation -->
-    <div class="presentation">
-        <div class="main">
-            <h1>BIENVENIDOS A JOMUN</h1>
-            <p></p>
+    <!-- first section -->
+    <section class="hero" id="first">
+        <div class="hero-text">
+            <h1>Bienvenido</h1>
+            <p>Si no le contesto se desespera
+                Piensa que con otra estoy
+                Haciendo lo que le hacía a ella
+                Eah eah eah
+                Como tu mente maquinéa
+                Cuando en la mía estoy
+                Mujer no quiero más peleas
+                No más peleas</p>
+            <a href="#">Inscribete</a>
+            <a href="#" class="ctaa"><i class="ri-play-fill"></i>¿Que es Jomun?</a>
         </div>
+
+        <div class="hero-img">
+            <img src="/images/bannerd.png" alt="">
+        </div>
+    </section>
+
+    <section class="hero" id="second">
+        <div class="hero-text">
+            <h1>Quienes somos</h1>
+            <p>asdasdasdasdasdasdasdasdasdass</p>
+        </div>
+
+        <div class="hero-img">
+            <img src="/images/Logo.png" alt="">
+        </div>
+    </section>
+
+    <!-- <section class="hero" id="therd">
+        <div class="hero-text">
+            <h1>Noticias</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias laborum modi quam consequatur. Tenetur modi aperiam illo, at voluptatibus ex ipsam cum fugiat, possimus labore accusantium autem ullam eum iusto.s</p>
+        </div>
+
+        <div class="hero-img">
+            <img src="/images/bannerd.png" alt="">
+        </div>
+    </section> -->
+
+    <!-- icons -->
+    <div class="icons">
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-youtube-line"></i></a>
+        <a href="#"><i class="ri-whatsapp-line"></i></a>
     </div>
 
-    <div class="principal">
-        <!-- <div class="info">
-            <h1>Prueba</h1>
-        </div> -->
-    </div>
-
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- custom js -->
     <script src="/index.js"></script>
 </body>
 </html>

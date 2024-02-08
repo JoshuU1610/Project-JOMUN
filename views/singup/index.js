@@ -1,11 +1,9 @@
-const container = document.getElementById('container');
-const registerBtn = document.getElementById('register');
-const loginBtn = document.getElementById('login');
-
-registerBtn.addEventListener('click', () => {
-  container.classList.add('active');
+const sr = ScrollReveal ({
+  distance: '65px',
+  duration: 2600,
+  delay: 450,
+  reset: true
 });
 
-loginBtn.addEventListener('click', () => {
-  container.classList.remove('active');
-});
+sr.reveal('.content-container',{ delay: 200, origin: 'top' });
+sr.reveal('.form-wrapper',{ delay: 450, origin: 'top' });

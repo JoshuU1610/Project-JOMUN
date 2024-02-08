@@ -4,64 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/input.css">
+    <link rel="stylesheet" href="/styles/singup.css">
 
+    <!-- link de remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- icono -->
+    <link rel="icon" href="/images/Logo.png" type="image/x-icon">
     <title>Login</title>
 </head>
-<body class="bg-slate-50">
+<body>
+  
+    <section class="container">
+      
 
-    <a href="/" class="return">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
-          </svg>
-          <p>Volver</p>          
-    </a>
-
-    <div class="container" id="container">
-        <div class="form-container sign-up">
-            <form>
-                <h1>Create Account</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon">
-                        <img src="/images/icons8-logo-de-google.svg" alt="">
-                    </a>
-                </div>
-                <span>or use your email for registeration</span>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button>Sign Up</button>
-            </form>
+        <div class="image-section">
+          <a id="botonRetroceder" href="/"><i class="ri-arrow-left-line"></i></a>
+          <div class="image-wrapper">
+            <img src="/images/image1.jpeg" alt="">
+          </div>
+  
+          <div class="content-container">
+            <h1 class="section-heading">La educación es la llave maestra que abre las <span>puertas del mundo</span></h1>
+            <p class="section-paragraph">El conocimiento es el puente que conecta mentes y construye un mundo mejor.</p>
+          </div>
         </div>
-        <div class="form-container sign-in">
-            <form>
-                <h1>Sign In</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><img src="/images/icons8-logo-de-google.svg" alt=""></a>
-                </div>
-                <span>or use your email password</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <a href="#">Forget Your Password?</a>
-                <button>Sign In</button>
-            </form>
-        </div>
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Welcome Back!</h1>
-                    <p>Enter your personal details to use all of site features</p>
-                    <button class="hidden" id="login">Sign In</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Register with your personal details to use all of site features</p>
-                    <button class="hidden" id="register">Sign Up</button>
-                </div>
+  
+        <div class="form-section">
+          <div class="form-wrapper">
+            <div class="logo-container">
+              <a href="#" class="logo-container">
+                <img src="/images/Logo.png" alt="Logo">
+              </a>
             </div>
+  
+            <h2>Bienvenido Delegado! 👋🏻</h2>
+            <p>Ingresa tus datos.</p>
+  
+            <div class="input-container">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password">
+              </div>
+            </div>
+  
+            <div class="remember-forgot">
+              <div class="remember-me">
+                <input type="checkbox" value="remember-me" id="remember-me">
+                <label for="remember-me">recuerdame</label>
+              </div>
+  
+              <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+  
+            <button class="login-btn">Ingresar</button>
+  
+            <div class="or-divider">or</div>
+  
+            <button class="google-signin">
+                <i class="ri-google-fill"></i>
+              <span>Ingresar con Google</span>
+            </button>
+          </div>
         </div>
-    </div>
+      </section>
 
+      <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+      <!-- custom js -->
     <script src="/signup/index.js"></script>
 </body>
 </html>
