@@ -1,5 +1,5 @@
 const PAGE_URL = process.env.NODE_ENV === 'production'
-  ? 'placeholder'
+  ? 'https://jomun.onrender.com'
   : 'http://localhost:3003';
 
 const MONGO_URI = process.env.NODE_ENV === 'production'
