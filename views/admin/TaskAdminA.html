@@ -1,5 +1,43 @@
 <div class="title">
     <i class="uil uil-files-landscapes"></i>
-    <span class="text">Tareas</span>
+    <span class="text">Reuniones</span>
 </div>
-<button class="agregar-usuario-btn" onclick="abrirModal()">Agregar Tarea</button>
+<button id="addTask" class="agregar-usuario-btn">Agregar Reunion</button>
+
+<div id="containerTasks" class="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+    
+</div>
+
+<div id="miModal" class="modal">
+    <div class="modal-content">
+        <!-- Contenido de la ventana modal -->
+        <header>Agregar Tarea</header>
+  <form action="#" class="form" id="task">
+    <div class="input-box">
+      <label>Nombre de la Reunion</label>
+      <input id="taskName" type="text" placeholder="Igrese el nombre de la reunion" required />
+    </div>
+    <div class="input-box">
+      <label>Descripcion de la reunion</label>
+      <input id="description" type="text" placeholder="descripcion" required />
+    </div>
+    <div class="select-box">
+        <select id="reunionType">
+          <option hidden>Seleccione el tipo de estudiante que asisitira a la reunion</option>
+          <option>Faculty y Profesores</option>
+          <option>Delegados General</option>
+          <option>Delegado Senior</option>
+          <option>Delegado Junior</option>
+        </select>
+      </div>
+    <div class="column">
+        <div class="input-box">
+            <label>Dia del encuentro</label>
+            <input id="meetingDay" type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+    <button type="submit" id="submit-task"  disabled>Registrar</button>
+    <button type="reset" id="close">Volver</button>
+  </form>
+    </div>
+</div>

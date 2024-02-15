@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/singup.css">
 
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- link de remixicon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
     <!-- icono -->
@@ -29,7 +33,7 @@
           </div>
         </div>
   
-        <div class="form-section">
+        <form action="#" id="login" class="form-section">
           <div class="form-wrapper">
             <div class="logo-container">
               <a href="#" class="logo-container">
@@ -51,16 +55,16 @@
               </div>
             </div>
   
-            <div class="remember-forgot">
+            <!-- <div class="remember-forgot">
               <div class="remember-me">
                 <input type="checkbox" value="remember-me" id="remember-me">
                 <label for="remember-me">recuerdame</label>
               </div>
   
               <a href="#">¿Olvidaste tu contraseña?</a>
-            </div>
+            </div> -->
   
-            <button class="login-btn">Ingresar</button>
+            <button type="submit" class="login-btn">Ingresar</button>
   
             <div class="or-divider">or</div>
   
@@ -69,12 +73,13 @@
               <span>Ingresar con Google</span>
             </button>
           </div>
-        </div>
+        </form>
       </section>
 
       <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
       <!-- custom js -->
-    <script src="/signup/index.js"></script>
+    <script type="module" src="/signup/index.js"></script>
+    <script type="module" src="../components/notification.js"></script>
 </body>
 </html>

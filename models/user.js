@@ -5,18 +5,22 @@ const userSchema = new mongoose.Schema({
   lastname: String,
   email: String,
   cedula: Number,
-  passwordHash: {
+  passwordhash: {
     type: String,
     default: 'JOMUN123'
   },
   phone: Number,
   birthday: Date,
   admission: Date,
-  userType: String,
+  usertype: String,
   verified: {
     type: Boolean,
     default: false,
   },
+  userCreator: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Tasks',
+  }],
 });
 
 userSchema.set('toJSON', {

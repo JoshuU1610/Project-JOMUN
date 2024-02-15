@@ -7,9 +7,13 @@
     <!-- Links del diseño -->
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/input.css">
+    <link rel="stylesheet" href="/styles/home.css">
 
     <!-- link del logo en el navegador -->
     <link rel="icon" href="/images/Logo.png" type="image/x-icon">
+    
+     <!-- axios -->
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <!-- link del boxicon -->
     <link rel="stylesheet"  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -29,13 +33,13 @@
     <header>
         <a href="#" class="logo">JOMUN</a>
 
-        <ul class="navlist">
+        <!-- <ul class="navlist">
             <li><a href="#first">Home</a></li>
             <li><a href="#second">Quien Somos</a></li>
-            <li><a href="#therd">Noticias</a></li>
-        </ul>
+            <!-- <li><a href="#therd">Noticias</a></li> -->
+        <!--</ul> -->
 
-        <a href="/signup" id="Login"><i class="ri-user-line"></i></a>
+        <a href="/signup" id="Login">Iniciar sesion</i></a>
     </header>
 
     <!-- first section -->
@@ -59,7 +63,7 @@
         </div>
     </section>
 
-    <section class="hero" id="second">
+    <!-- <section class="hero" id="second">
         <div class="hero-text">
             <h1>Quienes somos</h1>
             <p>asdasdasdasdasdasdasdasdasdass</p>
@@ -68,7 +72,7 @@
         <div class="hero-img">
             <img src="/images/Logo.png" alt="">
         </div>
-    </section>
+    </section> -->
 
     <!-- <section class="hero" id="therd">
         <div class="hero-text">
@@ -91,6 +95,7 @@
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- custom js -->
-    <script src="/index.js"></script>
+    <script type="module" src="/index.js"></script>
+    <script type="module" src="../components/getUsersComponent.js"></script>
 </body>
 </html>

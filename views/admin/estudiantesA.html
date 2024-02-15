@@ -2,54 +2,10 @@
     <i class="uil uil-users-alt"></i>
     <span class="text">Usuarios</span>
 </div>
-<button class="agregar-usuario-btn" onclick="abrirModal()">Agregar Usuario</button>
-    <table>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Cédula</th>
-                <th>Correo</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- filas con la información de tus usuarios -->
-            <tr>
-                <td>1</td>
-                <td>NombreUsuario</td>
-                <td>ApellidoUsuario</td>
-                <td>123456789</td>
-                <td>correo@corr.com</td>
-                <td><button class="edit-button">Ver/Editar</button></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>NombreUsuario</td>
-                <td>ApellidoUsuario</td>
-                <td>123456789</td>
-                <td>correo@corr.com</td>
-                <td><button class="edit-button">Ver/Editar</button></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>NombreUsuario</td>
-                <td>ApellidoUsuario</td>
-                <td>123456789</td>
-                <td>correo@corr.com</td>
-                <td><button class="edit-button">Ver/Editar</button></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>NombreUsuario</td>
-                <td>ApellidoUsuario</td>
-                <td>123456789</td>
-                <td>correo@corr.com</td>
-                <td><button class="edit-button">Ver/Editar</button></td>
-            </tr>
-        </tbody>
-    </table>
+<button id="agg" class="agregar-usuario-btn">Agregar Usuario</button>
+<div id="users" class="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+  <!-- users from your database -->
+</div>
 
 <!-- ventana modal -->
     <div id="miModal" class="modal">
@@ -64,6 +20,10 @@
         <div class="input-box">
             <label>Apellido</label>
             <input id="lastname" type="text" placeholder="Ingrese su apellido" required />
+          </div>
+          <div class="input-box">
+            <label>Contraseña temporal</label>
+            <input id="password" type="password" placeholder="El usuario podra cambiar la contraseña despues" required />
           </div>
         <div class="input-box">
           <label>Correo</label>
@@ -82,7 +42,6 @@
         <div class="select-box">
             <select id="userType">
               <option hidden>Tipo de Usuario</option>
-              <option>Super Admin</option>
               <option>Profesor Adjunto</option>
               <option>Faculty</option>
               <option>Secretario</option>
@@ -100,9 +59,8 @@
                 <input id="admission" type="date" placeholder="Enter birth date" required />
               </div>
             </div>
-        <button onclick="cerrarModal()">Registrar</button>
-        <button id="close" onclick="cerrarModal()">Volver</button>
+        <button type="submit" id="submit"  disabled>Registrar</button>
+        <button type="reset" id="close">Volver</button>
       </form>
         </div>
     </div>
-

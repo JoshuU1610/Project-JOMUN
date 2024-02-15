@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Links del diseño -->
+    <link rel="stylesheet" href="/styles/main.css">
+
     <!-- axios -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
@@ -31,25 +34,24 @@
 
         <div class="menu-items">
             <ul class="nav-links">
-                <li><a href="#" onclick="cargarContenido('dashboardSA')"">
+                <li><a href="#" id="inicioLink">
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Inicio</span>
                 </a></li>
-                <li><a href="#" onclick="cargarContenido('TaskAdminA')">
+                <li><a href="#" id="reunionesLink">
                     <i class="uil uil-files-landscapes"></i>
-                    <span class="link-name">Tareas</span>
+                    <span class="link-name">Reuniones</span>
                 </a></li>
-
-                <li><a href="#" onclick="cargarContenido('estudiantesA')">
+                <li><a href="#" id="usuariosLink">
                     <i class="uil uil-users-alt"></i>
                     <span class="link-name">Usuarios</span>
                 </a></li>
-
-                <li><a href="#">
+                <li><a href="#" id="notasLink">
                     <i class="uil uil-notes"></i>
-                    <span class="link-name">Notas de version</span>
+                    <span class="link-name">Notas de versión</span>
                 </a></li>
             </ul>
+            
             
             <ul class="logout-mode">
 
@@ -57,7 +59,7 @@
                     <i class="uil uil-setting"></i>
                     <span class="link-name">Configuracion</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="#" id="logout">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
@@ -79,7 +81,8 @@
     <section class="dashboard">
         <div class="top">
             <i class="uil uil-bars sidebar-toggle"></i>
-            
+            <p id="username" class="text-lg font-semibold text-black"></p>
+              
             <img src="/images/icon.png" alt="">
         </div>
 
@@ -93,47 +96,33 @@
                 <div class="boxes">
                     <div class="box box1">
                         <i class="uil uil-user-square"></i>
-                        <span class="text">Delegado Antiguos</span>
-                        <span class="number">50,120</span>
+                        <span class="text">Delegado Senior</span>
+                        <span id="Senior" class="number"></span>
                     </div>
-
+        
                     <div class="box box2">
                         <i class="uil uil-user-square"></i>
-                        <span class="text">Delegado Nuevos</span>
-                        <span class="number">50,120</span>
+                        <span class="text">Delegado Junior</span>
+                        <span id="Junior" class="number"></span>
                     </div>
-
+        
                     <div class="box box3">
                         <i class="uil uil-user-square"></i>
                         <span class="text">Facultys</span>
-                        <span class="number">50,120</span>
+                        <span id="Facultys" class="number"></span>
                     </div>
-
-                    <div class="box box4">
-                        <i class="uil uil-bag"></i>
-                        <span class="text">Reuniones proximas</span>
-                        <span class="number">20,120</span>
-                    </div>
-
-                    <div class="box box5">
-                        <i class="uil uil-folder-check"></i>
-                        <span class="text">Reuniones hechas</span>
-                        <span class="number">10,120</span>
-                    </div>
-
-                    <div class="box box6">
-                        <i class="uil uil-file-search-alt"></i>
-                        <span class="text">Documentos subidos</span>
-                        <span class="number">10,120</span>
-                    </div>
-
+        
+    
                 </div>
             </div>
 
         </div>
     </section>
 
-    <script src="/admin/index.js"></script>
-    <script src="/admin/pages.js"></script>
+    <script type="module" src="/admin/index.js"></script>
+    <script type="module" src="../components/diseñoGeneralComponent.js"></script>
+    <script type="module" src="../components/modalComponent.js"></script>
+    <script type="module" src="../components/contenidoComponent.js"></script>
+    <script type="module" src="../components/getUsersComponent.js"></script>
 </body>
 </html>
