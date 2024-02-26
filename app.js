@@ -13,6 +13,7 @@ const taskRouter = require('./controllers/task');
 const { userExtractor } = require('./middleware/auth');
 const { MONGO_URI } = require('./config');
 const adminRouter = require('./controllers/admin');
+const { verifyuser } = require('./middleware/login');
 
 (async () => {
   try {
@@ -34,7 +35,7 @@ app.use(cookieParser());
 app.use('/styles', express.static(path.resolve(__dirname, 'views', 'styles')));
 app.use('/images', express.static(path.resolve(__dirname, 'views', 'images')));
 app.use('/', express.static(path.resolve(__dirname, 'views', 'home')));
-app.use('/signup', express.static(path.resolve(__dirname, 'views', 'singup')));
+app.use('/signup', verifyuser , express.static(path.resolve(__dirname, 'views', 'singup')));
 app.use('/admin', express.static(path.resolve(__dirname, 'views', 'admin')));
 app.use('/components', express.static(path.resolve(__dirname, 'views', 'components')));
 app.use('/verify/:userid/:token', express.static(path.resolve(__dirname, 'views', 'verify')));

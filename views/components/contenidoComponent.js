@@ -10,13 +10,15 @@ export function cargarContenido(pagina) {
       .then(data => {
         document.getElementById('contenido').innerHTML = data;
         if (pagina === 'estudiantesA') {
-          inicializarFormulario();
           getUsers();
         } else if (pagina === 'TaskAdminA') {
           inicializarFormularioTask();
           getTasks();
         } else if (pagina === 'dashboardSA') {
           counts();
+        }
+        else if (pagina === 'formUser') {
+          inicializarFormulario();
         }
         
       })

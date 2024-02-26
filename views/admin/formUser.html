@@ -1,0 +1,52 @@
+<!-- Contenido de la ventana modal -->
+<header>Registration Form</header>
+<form action="#" class="form" id="Registro">
+    <div class="input-box">
+        <label>Nombre</label>
+        <input id="name" type="text" placeholder="Ingrese su nombre" required />
+    </div>
+    <div class="input-box">
+        <label>Apellido</label>
+        <input id="lastname" type="text" placeholder="Ingrese su apellido" required />
+    </div>
+    <div class="input-box">
+        <label>Contraseña temporal</label>
+        <input id="password" type="password" placeholder="El usuario podrá cambiar la contraseña después" required />
+    </div>
+    <div class="input-box">
+        <label>Correo</label>
+        <input id="email" type="text" placeholder="Ingrese su correo" required />
+    </div>
+    <div class="column">
+        <div class="input-box">
+            <label>Cedula</label>
+            <input id="cedula" type="number" placeholder="Numero de cedula" required />
+        </div>
+        <div class="input-box">
+            <label>Telefono</label>
+            <input id="phone" type="number" placeholder="Numero telefonico" required />
+        </div>
+    </div>
+    <div class="select-box">
+        <select id="userType">
+            <option hidden>Tipo de Usuario</option>
+            <option>Profesor Adjunto</option>
+            <option>Faculty</option>
+            <option>Secretario</option>
+            <option>Delegado Senior</option>
+            <option>Delegado Junior</option>
+        </select>
+    </div>
+    <div class="column">
+        <div class="input-box">
+            <label>Día de nacimiento</label>
+            <input id="birthday" type="date" placeholder="Enter birth date" required />
+        </div>
+        <div class="input-box">
+            <label>Día de Ingreso</label>
+            <input id="admission" type="date" placeholder="Enter birth date" required />
+        </div>
+    </div>
+    <button type="submit" id="submit" disabled>Registrar</button>
+    <button type="reset" id="returnUsers">Volver</button>
+</form>

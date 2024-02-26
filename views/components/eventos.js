@@ -17,6 +17,7 @@ export function agregarEventos() {
         const reunionesLink = getParentWithId(target, 'reunionesLink');
         const usuariosLink = getParentWithId(target, 'usuariosLink');
         const agregarUsuarioBtn = getParentWithId(target, 'agg');
+        const RegresarUsuarioBtn = getParentWithId(target, 'returnUsers');
         const agregarTareaBtn = getParentWithId(target, 'addTask');
         const logOutBtn = getParentWithId(target, 'logout');
     
@@ -27,9 +28,9 @@ export function agregarEventos() {
         } else if (usuariosLink) {
             cargarContenido('estudiantesA');
         } else if (agregarUsuarioBtn) {
-            abrirModal();
-        } else if (target.id === 'close') {
-            cerrarModal();
+            cargarContenido('formUser')
+        } else if (RegresarUsuarioBtn) {
+            cargarContenido('estudiantesA');
         } else if (target.id === 'submit') {
             manejarEnvioFormulario();
         } else if (agregarTareaBtn) {
@@ -39,7 +40,7 @@ export function agregarEventos() {
         } else if (target.id === 'submit-task') {
             manejarEnvioFormularioTask();
         } else if (target.id === 'DeleteUserBtn') {
-            const userId = target.closest('.bg-white').getAttribute('boxid');
+            const userId = target.closest('.usuarioaja').getAttribute('boxid');
             deleteUser(userId);
         } else if (target.id === 'DeleteTaskBtn') {
             const taskId = target.closest('.bg-white').getAttribute('boxid');

@@ -40,6 +40,6 @@ export function inicializarDiseñoGeneral() {
     const Pusername = document.getElementById('username');
 
     Pusername.innerHTML = `
-    <span class="block">Bienvenido ${UserData.name} ${UserData.lastname}</span>
+    <span class="block" style="color: var(--text-color);">Bienvenido ${UserData.name} ${UserData.lastname}</span>
      `;
 }
