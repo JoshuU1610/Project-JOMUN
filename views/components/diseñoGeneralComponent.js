@@ -42,4 +42,4 @@ export function inicializarDiseñoGeneral() {
     Pusername.innerHTML = `
     <span class="block" style="color: var(--text-color);">Bienvenido ${UserData.name} ${UserData.lastname}</span>
      `;
-}
+} 
